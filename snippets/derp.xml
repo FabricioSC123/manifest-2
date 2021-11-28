@@ -20,6 +20,10 @@
            fetch="https://github.com/aex-tmp"
            revision="refs/heads/12.x" />
 
+  <remote  name="syberia"
+           fetch="https://github.com/syberia-project"
+           revision="refs/heads/12.0" />
+
   <!-- DerpFest -->
   <!-- Rootdir -->
   <project path="art" name="art" groups="pdk" remote="derp" />
@@ -147,6 +151,7 @@
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="derp" />
 
   <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="syberia" />
   <project path="packages/apps/DerpLauncher" name="packages_apps_DerpLauncher" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/DerpSpace" name="packages_apps_DerpSpace" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp" />
@@ -168,6 +173,7 @@
 
   <!-- System -->
   <project path="system/apex" name="system_apex" groups="pdk" remote="derp" />
+  <project path="system/bt" name="platform_system_bt" remote="syberia" />
   <project path="system/core" name="system_core" groups="pdk" remote="derp" />
   <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="derp" />
   <project path="system/logging" name="system_logging" groups="pdk" remote="derp" />
@@ -187,6 +193,10 @@
   <project path="vendor/gms" name="vendor_gms" remote="derp-gitlab" revision="12" clone-depth="1" />
   <project path="vendor/overlay" name="vendor_overlay" remote="derp" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="vendor_nxp_interfaces_opensource_nfc" remote="derp" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="platform_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="syberia" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform_vendor_qcom_opensource_bluetooth_ext" remote="syberia" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="platform_vendor_qcom_opensource_packages_apps_Bluetooth" remote="syberia" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform_vendor_qcom_opensource_system_bt" remote="syberia" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="vendor_nxp_opensource_external_libnfc-nci" remote="derp" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="vendor_nxp_opensource_frameworks" remote="derp" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="vendor_nxp_opensource_packages_apps_Nfc" remote="derp" />
